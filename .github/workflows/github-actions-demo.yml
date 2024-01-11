@@ -18,4 +18,4 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: npm config set registry https://registry.npmjs.org
       - run: npm install
-      - run: npm build
+      - run: npm run build
