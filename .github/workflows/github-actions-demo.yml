@@ -16,3 +16,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: npm config set registry https://registry.npmjs.org
+      - run: npm cache clean
+      - run: npm install
+      - run: npm lint
+      - run: npm build
