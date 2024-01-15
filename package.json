@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@alicorpdigital/dali-css-library": "1.31.0-canary.2",
+    "@alicorpdigital/dali-react-button": "0.0.10-canary.3",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@alicorpdigital/dali-css-library':
+    specifier: 1.31.0-canary.2
+    version: 1.31.0-canary.2
+  '@alicorpdigital/dali-react-button':
+    specifier: 0.0.10-canary.3
+    version: 0.0.10-canary.3
   next:
     specifier: 14.0.4
     version: 14.0.4(react-dom@18.0.0)(react@18.0.0)(sass@1.69.7)
@@ -44,6 +50,14 @@ packages:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /@alicorpdigital/dali-css-library@1.31.0-canary.2:
+    resolution: {integrity: sha512-PMN4Kma46GQP30mnKaxGzDO8yk3q1bt/h5SShDWOB0KbawbDcgsH/KQ29e2aqQG7Gkb/dlpJ42LvUX0RASOoDg==}
+    dev: false
+
+  /@alicorpdigital/dali-react-button@0.0.10-canary.3:
+    resolution: {integrity: sha512-ZDIhf2Jh4EJ/pyYXFpC1I5IaUvIdtay/KpG2zkOzYQt4eEWlhod1wswUQ4kMJlD4anYHxrkd71STOcCWPaN4aQ==}
+    dev: false
 
   /@babel/runtime@7.23.8:
     resolution: {integrity: sha512-Y7KbAP984rn1VGMbGqKmBLio9V7y5Je9GvU4rQPCPinCyNfUcToxIXl06d59URp/F3LwinvODxab5N/G6qggkw==}
