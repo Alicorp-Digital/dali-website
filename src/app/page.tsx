@@ -1,12 +1,7 @@
-import { DlButton } from "@alicorpdigital/dali-react-button";
+import { Home } from 'templates';
 
-const Home = () => {
-  return (
-    <main>
-      home
-      <DlButton>button</DlButton>
-    </main>
-  )
+const PageHome = () => {
+  return <Home />
 }
 
-export default Home;
+export default PageHome;

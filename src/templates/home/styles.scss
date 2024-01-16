@@ -1,0 +1,11 @@
+.dl-home {
+  border: 1px solid red;
+
+  &__content {
+    border: 1px solid blue;
+
+    &--modifier {
+      background-color: green;
+    }
+  }
+}
