@@ -9,6 +9,7 @@ const PageFundamentals = () => {
       description: 'Entendamos a nuestros usuarios y cuidemos la interactividad.'
     },
     {
+      icon: 'gear',
       title: 'Color',
       description: 'Entendamos las semántica de color para ser consistentes.'
     },
