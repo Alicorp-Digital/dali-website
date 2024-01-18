@@ -22,7 +22,7 @@ export default function RootLayout({
           <div style={{'display': 'flex'}} >
             <aside style={{'maxWidth': '360px', 'width': '100%'}} >
             </aside>
-            <section style={{'paddingLeft': '46px', 'paddingRight': '76px'}} >
+            <section style={{'paddingLeft': '46px', 'paddingRight': '76px', 'width': '100%'}} >
               {children}
             </section>
           </div>
