@@ -16,7 +16,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div style={{'display': 'flex', 'flexDirection':'column'}} >
+          <nav style={{'minHeight': '72px'}} ></nav>
+          <div style={{'display': 'flex'}} >
+            <aside style={{'maxWidth': '360px', 'width': '100%'}} >
+            </aside>
+            <section style={{'paddingLeft': '46px', 'paddingRight': '76px'}} >
+              {children}
+            </section>
+          </div>
+        </div>
+      </body>
     </html>
   )
 }

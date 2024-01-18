@@ -1,7 +1,11 @@
 import { Home } from 'templates';
 
 const PageHome = () => {
-  return <Home />
+  return (
+    <section>
+      <Home />
+    </section>
+  )
 }
 
 export default PageHome;

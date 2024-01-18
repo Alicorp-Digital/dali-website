@@ -1,0 +1,12 @@
+.team-member {
+  list-style: none;
+  width: 25%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .team-member {
+    width: 50%;
+  }
+  
+}
