@@ -11,6 +11,9 @@ dependencies:
   '@alicorpdigital/dali-react-button':
     specifier: 0.0.10-canary.3
     version: 0.0.10-canary.3
+  '@alicorpdigital/dali-react-interactiveicon':
+    specifier: 0.0.2-canary.1
+    version: 0.0.2-canary.1
   next:
     specifier: 14.0.4
     version: 14.0.4(react-dom@18.0.0)(react@18.0.0)(sass@1.69.7)
@@ -57,6 +60,10 @@ packages:
 
   /@alicorpdigital/dali-react-button@0.0.10-canary.3:
     resolution: {integrity: sha512-ZDIhf2Jh4EJ/pyYXFpC1I5IaUvIdtay/KpG2zkOzYQt4eEWlhod1wswUQ4kMJlD4anYHxrkd71STOcCWPaN4aQ==}
+    dev: false
+
+  /@alicorpdigital/dali-react-interactiveicon@0.0.2-canary.1:
+    resolution: {integrity: sha512-2F+tphsMvoY17FdbxY+wS4JKGQzfOhMRplT/nxotewrgscSErn9wDbcM96xaHf0l1MqhtKabFMLtRbo/XaROmg==}
     dev: false
 
   /@babel/runtime@7.23.8:

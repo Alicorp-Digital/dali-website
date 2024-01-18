@@ -1,0 +1,15 @@
+.dali-layout-main {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 64px 1fr;
+
+  &__content {
+    background-color: #F7F7F7;
+  }
+
+  @media screen and (min-height: 768px) {
+    grid-template-rows: 72px 1fr;
+  }
+}
