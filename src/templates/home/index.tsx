@@ -2,11 +2,11 @@ import './styles.scss';
 
 const Home = () => {
   return (
-    <div className='dl-home'>
-      <div className='dl-home__content'>
+    <div className='dali-home'>
+      <div className='dali-home__content'>
         content
       </div>
-      <div className='dl-home__content--modifier'>
+      <div className='dali-home__content--modifier'>
         modifier
       </div>
     </div>
