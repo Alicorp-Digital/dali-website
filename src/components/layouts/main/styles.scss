@@ -1,0 +1,32 @@
+.dali-layout-main {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 64px 1fr;
+
+  &__content {
+    background-color: #F7F7F7;
+
+    .dl-sidebar {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    grid-template-rows: 72px 1fr;
+
+    &__content {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+
+      .dl-sidebar {
+        display: block;
+      }
+    }
+
+    &__children {
+      padding: 72px 76px 72px 46px ;
+    }
+  }
+}
