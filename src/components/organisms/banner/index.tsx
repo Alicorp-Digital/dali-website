@@ -18,7 +18,11 @@ export default function Banner() {
       <figure className="banner-figure-3 mb-0">
         <img src="https://res.cloudinary.com/dlp5ey53k/image/upload/v1705850077/asset_2_yw2zon.png" />
       </figure>
-      <div className="banner-bg">Dali</div>
+      <div className="banner-bg d-flex align-items-center">
+        <figure className="banner-logo">
+          <img src="https://res.cloudinary.com/dlp5ey53k/image/upload/v1705954710/dali_logo_pun3zp.png" />
+        </figure>
+      </div>
       <figure className="banner-figure-1 mb-0">
         <img src="https://res.cloudinary.com/dlp5ey53k/image/upload/v1705850077/asset_3_lpnh2z.png" />
       </figure>

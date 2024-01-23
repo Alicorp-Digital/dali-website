@@ -26,7 +26,7 @@
     width: 100px;
     z-index: 1;
     opacity: 0;
-    transition: all 0.3s;
+    transition: all 0.25s;
     &.active {
       opacity: 1;
       left: 0;
@@ -39,7 +39,7 @@
     width: 260px;
     z-index: 3;
     opacity: 0;
-    transition: all 0.3s;
+    transition: all 0.25s;
     &.active {
       opacity: 1;
       right: 0;
@@ -51,7 +51,7 @@
     left: -20px;
     width: 250px;
     z-index: 3;
-    transition: all 0.3s;
+    transition: all 0.25s;
     opacity: 0;
     &.active {
       opacity: 1;
@@ -70,11 +70,23 @@
     width: 435px;
     top: 30px;
     z-index: 3;
-    transition: all 0.8s;
+    transition: all 0.4s;
     opacity: 0;
     &.active {
       opacity: 1;
       top: 5px
+    }
+  }
+  &-logo {
+    width: 280px;
+    padding-left: 25px;
+    transform: translateY(50px);
+    transition: all 0.4s;
+    opacity: 0;
+    margin: 0;
+    &.active {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }

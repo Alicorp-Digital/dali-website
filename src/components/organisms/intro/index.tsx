@@ -15,10 +15,15 @@ export default function Intro() {
         en el más alto nivel digital, Dali sigue estándares globales, criterios
         accesibles, y garantiza escalabilidad y consistencia en el desarrollo.
       </p>
-      <img
-        style={{ maxWidth: "100%" }}
-        src="https://previews.dropbox.com/p/thumb/ACIyLGxyJ8p5dQ7Yn983aKF1ZX3w_pa_Jxld0rdqlY3YldCSqTXkGxkitCmr577aPD7CqKscUPreGf7mFxyD6xU9x-I8s0lKPEqXNkPcGVrJjVAiji6T1vX-TmtQDmoWTaXG9Rr1PVRJuSSmOeTdqpJ_1Tw6yUAmsp67CqUpBIbNaOKRPBZ-UQrDVIhc9_3ueRFCpQWsPOQcvRGK6uyBzvco6k4H2PnOBICHTzFj5Nh83Fr7l2pGm-DbiBXuVLhNZcsD9M8rIgssaA6jMla1hBXGrryUwNDUoNEU3mxejxY3OZ_O4lTOERqphnILXPqth41GRxsCi5DTh9evLbB6U2UP/p.png"
-      />
+      <div className="intro-container-video">
+        <iframe
+          className="intro-video"
+          src="https://player.vimeo.com/video/595394325?h=0ab31c1238?autoplay=1&loop=1&background=1"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
   );
 }

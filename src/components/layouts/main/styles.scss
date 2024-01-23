@@ -17,16 +17,19 @@
     grid-template-rows: 72px 1fr;
 
     &__content {
-      display: grid;
-      grid-template-columns: 360px 1fr;
+      display: flex;
+      // grid-template-columns: 360px 1fr;
 
       .dl-sidebar {
         display: block;
+        min-width: 250px;
       }
     }
 
     &__children {
       padding: 72px 76px 72px 46px ;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
