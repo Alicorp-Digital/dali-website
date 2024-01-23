@@ -13,23 +13,20 @@ export default function Palette() {
   ];
 
   return (
-    <>
-      <h3 className="dl-title-xs mb-5">Equipo</h3>
-      <ul className="d-flex justify-content-between">
-        {data.map((item, index) => (
-          <li key={index}>
-            <p>{item.name}</p>
-            <ul className="d-flex justify-content-between">
-              {item.colors.map((color) => (
-                <li
-                  className="palette-item"
-                  style={{ backgroundColor: color }}
-                ></li>
-              ))}
-            </ul>
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul className="d-flex justify-content-between">
+      {data.map((item, index) => (
+        <li className="palette-list" key={index}>
+          <p>{item.name}</p>
+          <ul className="d-flex palette-item-container flex-wrap">
+            {item.colors.map((color) => (
+              <li
+                className="palette-item rounded"
+                style={{ backgroundColor: color }}
+              ></li>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </ul>
   );
 }
