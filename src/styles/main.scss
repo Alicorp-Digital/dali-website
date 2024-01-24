@@ -10,6 +10,21 @@
   padding: 0 32px 40px 32px;
 
 }
+
+.rounded {
+  border-radius: 8px !important;
+}
+
+
+.dl-title-sm,
+.dl-title-xs {
+  color: #202020;
+}
+
+.dl-body-xxs,
+.dl-subtitle-xs {
+  color: #6C6C6C;
+}
 @media screen and (max-width: 480px) { 
   .wrapper {
     padding: 32px 16px;

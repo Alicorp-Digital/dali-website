@@ -3,8 +3,8 @@ import "./styles.scss";
 export default function Intro() {
   return (
     <div className="wrapper pt-5">
-      <h2 className="dl-title-xs mb-5">Dali design system</h2>
-      <p className="dl-body-xxs mb-5">
+      <h2 className="dl-title-xs mb-3 pb-4">Dali design system</h2>
+      <p className="dl-body-xxs mb-3 pb-4">
         Dali, el Design System de Alicorp, es una librería de elementos tanto
         para diseño y desarrollo. Su función principal es optimizar las
         operaciones al facilitar la reutilización de componentes valiosos,

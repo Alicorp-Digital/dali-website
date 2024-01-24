@@ -42,7 +42,7 @@ export default function Team() {
 
   return (
     <div className="wrapper">
-      <h3 className="dl-title-xs mb-5">Equipo</h3>
+      <h3 className="dl-title-xs mb-3 pb-4">Equipo</h3>
       <ul
         style={{ margin: "auto" }}
         className="d-flex team-list justify-content-center flex-wrap"

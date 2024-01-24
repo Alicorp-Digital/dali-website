@@ -21,6 +21,9 @@ export default function Banner() {
       <div className="banner-bg d-flex align-items-center">
         <figure className="banner-logo">
           <img src="https://res.cloudinary.com/dlp5ey53k/image/upload/v1705954710/dali_logo_pun3zp.png" />
+          <figcaption className="dl-comp-text-nano mt-4">
+            React v.2.3.0, Angular v.2.3.0, Android v.2.3.4
+          </figcaption>
         </figure>
       </div>
       <figure className="banner-figure-1 mb-0">

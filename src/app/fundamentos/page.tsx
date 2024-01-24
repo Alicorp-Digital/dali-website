@@ -42,7 +42,7 @@ const PageFundamentals = () => {
 
   return (
     <LayoutFundamentals>
-      <p className="dl-body-xxs mt-5 mb-5">
+      <p className="dl-body-xxs mt-5 mb-4 pb-3">
         Las fundamentos son elementos visuales necesarios para crear
         experiencias consistentes al ecosistema Alicorp para el usuario de un
         extremo a otro. Esto incluye orientación sobre iconografía, tipografía,
