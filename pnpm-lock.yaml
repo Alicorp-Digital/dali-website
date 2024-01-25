@@ -11,9 +11,15 @@ dependencies:
   '@alicorpdigital/dali-react-button':
     specifier: 0.0.10-canary.3
     version: 0.0.10-canary.3
+  '@alicorpdigital/dali-react-icon':
+    specifier: ^0.0.15
+    version: 0.0.15
   '@alicorpdigital/dali-react-interactiveicon':
     specifier: 0.0.2-canary.1
     version: 0.0.2-canary.1
+  '@alicorpdigital/dali-react-link':
+    specifier: 0.0.1-canary.0
+    version: 0.0.1-canary.0
   '@alicorpdigital/dali-react-sidebar':
     specifier: 0.0.1-canary.1
     version: 0.0.1-canary.1
@@ -65,8 +71,16 @@ packages:
     resolution: {integrity: sha512-ZDIhf2Jh4EJ/pyYXFpC1I5IaUvIdtay/KpG2zkOzYQt4eEWlhod1wswUQ4kMJlD4anYHxrkd71STOcCWPaN4aQ==}
     dev: false
 
+  /@alicorpdigital/dali-react-icon@0.0.15:
+    resolution: {integrity: sha512-mYLkUcsPxxpyZil7flB9LgvXRVMpr2+FgEhGIT8m6la22LcWd3ScmCtuKJY+BV5dTo5n6EO6AQr5+FnQxspkwA==}
+    dev: false
+
   /@alicorpdigital/dali-react-interactiveicon@0.0.2-canary.1:
     resolution: {integrity: sha512-2F+tphsMvoY17FdbxY+wS4JKGQzfOhMRplT/nxotewrgscSErn9wDbcM96xaHf0l1MqhtKabFMLtRbo/XaROmg==}
+    dev: false
+
+  /@alicorpdigital/dali-react-link@0.0.1-canary.0:
+    resolution: {integrity: sha512-pDNqiCPezQiL6bPgjRwZRSuJsrq1z4SBmQyWMyRoJmREl7ASfJyf9679z9MtOLupCeiGdWL31MTryS48Z2ToSw==}
     dev: false
 
   /@alicorpdigital/dali-react-sidebar@0.0.1-canary.1:

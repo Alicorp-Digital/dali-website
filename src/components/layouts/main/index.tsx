@@ -3,6 +3,7 @@ import { FC, ReactNode } from "react";
 import { Header } from "components";
 import './styles.scss';
 import { DlSidebar } from "@alicorpdigital/dali-react-sidebar";
+import {DlIcon} from '@alicorpdigital/dali-react-icon'
 
 type Props = {
   children: ReactNode
@@ -13,34 +14,60 @@ const LayoutMain: FC<Props> = (props) => {
 
   const items = [
     {
-      label: 'Item 1',
-      key: 'item1',
-      // icon: <DlIcon name='package' />,
+      label: 'Primeros pasos',
+      key: 'first-steps',
+      icon: <DlIcon name='education' />,
       children: [
-        {label: 'subItem 1', key: 'subItem1'},
-        {label: 'subItem 2', key: 'subItem2'},
+        {label: 'Introducción', key: 'Introducción'},
+        {label: 'Para Diseño', key: 'Para Diseño'},
+        {label: 'Para Desarrollo', key: 'Para Desarrollo'},
       ],
     },
     {
-      label: 'Item 2',
-      key: 'item2',
-      // icon: <DlIcon name='package' />,
+      label: 'Brand',
+      key: 'brand',
+      icon: <DlIcon name='agenda' />,
       children: [
-        {label: 'subItem 1', key: 'subItem11'},
-        {label: 'subItem 2', key: 'subItem22'},
+        {label: 'Introducción', key: 'Introducción'},
+        {label: 'Para Diseño', key: 'Para Diseño'},
+        {label: 'Para Desarrollo', key: 'Para Desarrollo'},
       ],
     },
     {
-      label: 'Item 3',
-      key: 'item3',
-      // icon: <DlIcon name='package' />,
-      disabled: true,
+      label: 'Fundamentos',
+      key: 'fundaments',
+      icon: <DlIcon name='thunder' />,
+      children: [
+        {label: 'Introducción', key: 'Introducción'},
+        {label: 'Para Diseño', key: 'Para Diseño'},
+        {label: 'Para Desarrollo', key: 'Para Desarrollo'},
+      ],
     },
     {
-      label: 'Item 4',
-      key: 'item4',
-      // icon: <DlIcon name='package' />,
-    }
+      label: 'Tokens',
+      key: 'tokens',
+      icon: <DlIcon name='tree-view' />,
+      children: [
+        {label: 'Introducción', key: 'Introducción'},
+        {label: 'Para Diseño', key: 'Para Diseño'},
+        {label: 'Para Desarrollo', key: 'Para Desarrollo'},
+      ],
+    },
+    {
+      label: 'Componentes',
+      key: 'components',
+      icon: <DlIcon name='star' />,
+    },
+    {
+      label: 'Patrones',
+      key: 'patters',
+      icon: <DlIcon name='package' />,
+    },
+    {
+      label: 'Soporte',
+      key: 'support',
+      icon: <DlIcon name='education' />,
+    },
   ]
   return (
     <div className='dali-layout-main'>
