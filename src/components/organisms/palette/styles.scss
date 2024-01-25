@@ -1,0 +1,15 @@
+.palette {
+  &-item {
+    width: 164px;
+    height: 80px;
+    list-style: none;
+    border: 1px solid #DEDEDE;
+    &-container {
+      max-width: 343px;
+      gap: 14px;
+    }
+  }
+  &-list {
+    list-style: none;
+  }
+}

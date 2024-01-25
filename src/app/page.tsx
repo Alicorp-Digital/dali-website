@@ -1,7 +1,12 @@
 import { Home } from 'templates';
+import '../styles/main.scss';
 
 const PageHome = () => {
-  return <Home />
+  return (
+    <section>
+      <Home />
+    </section>
+  )
 }
 
 export default PageHome;

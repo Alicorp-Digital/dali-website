@@ -1,0 +1,21 @@
+.fundamentals {
+  &-list{
+    padding-left: 0;
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    &--item {
+      list-style: none;
+      max-width: 395px;
+      padding: 24px 24px 16px 24px;
+      box-shadow: 0px 8px 16px -4px rgba(108, 108, 108, 0.16),
+        0px 0px 4px 0px rgba(108, 108, 108, 0.08);;
+      &-title {
+        gap: 16px
+      }
+      i {
+        color: #E62020;
+      }
+    }
+  }
+}
