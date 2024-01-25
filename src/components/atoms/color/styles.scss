@@ -1,0 +1,13 @@
+.color {
+  &-container {
+    list-style: none;
+    width: 331px;
+  }
+  &-title {
+    background-color: rgba(224, 220, 220, 0.32);
+  }
+  &-description,
+  &-title {
+    color: #6C6C6C !important;
+  }
+}
