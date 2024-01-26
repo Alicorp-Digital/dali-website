@@ -1,6 +1,7 @@
 import { Content } from 'components';
 import {DlLink} from '@alicorpdigital/dali-react-link'
 import { DlIcon } from '@alicorpdigital/dali-react-icon';
+import Image from 'next/image'
 import './styles.scss';
 
 import designTokens from 'assets/libraries/design-tokens.svg';
@@ -14,30 +15,44 @@ import androidComponents from 'assets/libraries/android-components.svg';
 const items = [
   {
     image: designTokens.src,
+    width: designTokens.width,
+    height: designTokens.height,
     title: 'Dali design tokens',
   },
   {
     image: daliIcons.src,
+    width: daliIcons.width,
+    height: daliIcons.height,
     title: 'Dali icons library',
   },
   {
     image: daliFont.src,
+    width: daliFont.width,
+    height: daliFont.height,
     title: 'Dali font library',
   },
   {
     image: reactComponents.src,
+    width: reactComponents.width,
+    height: reactComponents.height,
     title: 'Dali componentes react',
   },
   {
     image: cssLibrary.src,
+    width: cssLibrary.width,
+    height: cssLibrary.height,
     title: 'Dali CSS library',
   },
   {
     image: angularTokens.src,
+    width: angularTokens.width,
+    height: angularTokens.height,
     title: 'Dali componentes Angular',
   },
   {
     image: androidComponents.src,
+    width: androidComponents.width,
+    height: androidComponents.height,
     title: 'Dali componentes Android Nativo',
   },
 ]
@@ -64,7 +79,7 @@ const ForDevelopers = () => {
           return (
             <div key={item.title} className='dali-for-design__library'>
               <div className='dali-for-design__library-content'>
-                <img src={item.image} alt={item.title} />
+                <Image src={item.image} width={item.width} height={item.height} alt={item.title} />
               </div>
               <p className='dl-subtitle-xxs'>{item.title}</p>
             </div>

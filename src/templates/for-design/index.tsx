@@ -1,6 +1,7 @@
 import { Content } from 'components';
 import {DlLink} from '@alicorpdigital/dali-react-link'
 import { DlIcon } from '@alicorpdigital/dali-react-icon';
+import Image from 'next/image'
 import './styles.scss';
 
 import globalTokens from 'assets/libraries/global-tokens.svg';
@@ -15,34 +16,50 @@ import insumaTokens from 'assets/libraries/insuma-tokens.svg';
 const items = [
   {
     image: globalTokens.src,
+    width: globalTokens.width,
+    height: globalTokens.height,
     title: 'Dali Global tokens',
   },
   {
     image: daliIcons.src,
+    width: daliIcons.width,
+    height: daliIcons.height,
     title: 'Dali icons',
   },
   {
     image: alicorpComponents.src,
+    width: alicorpComponents.width,
+    height: alicorpComponents.height,
     title: 'Dali Alicorp components',
   },
   {
     image: alicorpTokens.src,
+    width: alicorpTokens.width,
+    height: alicorpTokens.height,
     title: 'Dali Alicorp tokens',
   },
   {
     image: diadiaComponents.src,
+    width: diadiaComponents.width,
+    height: diadiaComponents.height,
     title: 'Dali Díadía components',
   },
   {
     image: diadiaTokens.src,
+    width: diadiaTokens.width,
+    height: diadiaTokens.height,
     title: 'Dali Díadía tokens',
   },
   {
     image: insumaComponents.src,
+    width: insumaComponents.width,
+    height: insumaComponents.height,
     title: 'Dali Insuma components',
   },
   {
     image: insumaTokens.src,
+    width: insumaTokens.width,
+    height: insumaTokens.height,
     title: 'Dali Insuma tokens',
   },
 ]
@@ -68,7 +85,7 @@ const ForDesign = () => {
           return (
             <div key={item.title} className='dali-for-design__library'>
               <div className='dali-for-design__library-content'>
-                <img src={item.image} alt={item.title} />
+                <Image src={item.image} width={item.width} height={item.height} alt={item.title} />
               </div>
               <p className='dl-subtitle-xxs'>{item.title}</p>
             </div>
