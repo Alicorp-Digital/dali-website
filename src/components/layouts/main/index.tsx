@@ -4,12 +4,14 @@ import { Header } from "components";
 import './styles.scss';
 import { DlSidebar } from "@alicorpdigital/dali-react-sidebar";
 import {DlIcon} from '@alicorpdigital/dali-react-icon'
+import { useRouter } from 'next/navigation';
 
 type Props = {
   children: ReactNode
 }
 
 const LayoutMain: FC<Props> = (props) => {
+  const router = useRouter()
   const { children } = props;
 
   const items = [
@@ -18,9 +20,9 @@ const LayoutMain: FC<Props> = (props) => {
       key: 'first-steps',
       icon: <DlIcon name='education' />,
       children: [
-        {label: 'Introducción', key: 'Introducción'},
-        {label: 'Para Diseño', key: 'Para Diseño'},
-        {label: 'Para Desarrollo', key: 'Para Desarrollo'},
+        {label: 'Introducción', key: 'Introducción', href: '/primeros-pasos'},
+        {label: 'Para Diseño', key: 'Para Diseño', href: '/primeros-pasos/para-diseno' },
+        {label: 'Para Desarrollo', key: 'Para Desarrollo', href: '/primeros-pasos/para-desarrollador'},
       ],
     },
     {
@@ -37,10 +39,14 @@ const LayoutMain: FC<Props> = (props) => {
       label: 'Fundamentos',
       key: 'fundaments',
       icon: <DlIcon name='thunder' />,
+      href: '/fundamentos',
       children: [
-        {label: 'Introducción', key: 'Introducción'},
-        {label: 'Para Diseño', key: 'Para Diseño'},
-        {label: 'Para Desarrollo', key: 'Para Desarrollo'},
+        {label: 'Color', key: 'Color', href: '/fundamentos/color' },
+        // {label: 'Accesibilidad', key: 'Accesibilidad', href: '/fundamentos/accesibilidad' },
+        // {label: 'Ilustración', key: 'Ilustración', href: '/fundamentos/ilustracion' },
+        // {label: 'Espaciados', key: 'Espaciados', href: '/fundamentos/espaciados' },
+        // {label: 'Tipografías', key: 'Tipografias', href: '/fundamentos/tipografias' },
+        // {label: 'Iconografía', key: 'iconografia', href: '/fundamentos/iconografia' },
       ],
     },
     {
@@ -73,7 +79,10 @@ const LayoutMain: FC<Props> = (props) => {
     <div className='dali-layout-main'>
       <Header />
       <div className='dali-layout-main__content'>
-        <DlSidebar items={items} />
+        <DlSidebar
+          items={items}
+          onClick={event => event.href && router.push(event.href)}
+        />
 
         <div className='dali-layout-main__children'>
           {children}

@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@alicorpdigital/dali-css-library':
-    specifier: 1.32.1-canary.4
-    version: 1.32.1-canary.4
+    specifier: 1.32.1-canary.7
+    version: 1.32.1-canary.7
   '@alicorpdigital/dali-react-button':
     specifier: 0.0.10-canary.3
     version: 0.0.10-canary.3
@@ -21,8 +21,8 @@ dependencies:
     specifier: 0.0.1-canary.0
     version: 0.0.1-canary.0
   '@alicorpdigital/dali-react-sidebar':
-    specifier: 0.0.1-canary.1
-    version: 0.0.1-canary.1
+    specifier: 0.0.1-canary.8
+    version: 0.0.1-canary.8
   next:
     specifier: 14.0.4
     version: 14.0.4(react-dom@18.0.0)(react@18.0.0)(sass@1.69.7)
@@ -63,8 +63,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@alicorpdigital/dali-css-library@1.32.1-canary.4:
-    resolution: {integrity: sha512-ksMPWInXf3MeOhYjudgEnlUxTQRN8DE1gpi81zb7kiKU49XbcVTFTJTc6j6lfKSbX+/3DqolP36ObCFs/S32lg==}
+  /@alicorpdigital/dali-css-library@1.32.1-canary.7:
+    resolution: {integrity: sha512-jqjh6+PXfwIUHXrJRRIEG3a/Cla7R4dcrjw/lI2gIn3i/MySxv8LwqWEynnMNwVLHB72M+ZKFprM6u1mfMabHQ==}
     dev: false
 
   /@alicorpdigital/dali-react-button@0.0.10-canary.3:
@@ -83,8 +83,8 @@ packages:
     resolution: {integrity: sha512-pDNqiCPezQiL6bPgjRwZRSuJsrq1z4SBmQyWMyRoJmREl7ASfJyf9679z9MtOLupCeiGdWL31MTryS48Z2ToSw==}
     dev: false
 
-  /@alicorpdigital/dali-react-sidebar@0.0.1-canary.1:
-    resolution: {integrity: sha512-re81mkH8ydEucrMJyWimgBY+q51VVAB+38pmjTgKNm1OUdhBgGE6nz/7JR39ukPDfBgFCo4EDB4R/lhaUROdsg==}
+  /@alicorpdigital/dali-react-sidebar@0.0.1-canary.8:
+    resolution: {integrity: sha512-4oy8BrVSfdScXJ8cFlXnMEL8SdGOlTw+xP5+Mwv0lDf8WAoNMMZbhvp2sDq+TciN0wGUBZcVBKyRoTh0nEEhYA==}
     dev: false
 
   /@babel/runtime@7.23.8:

@@ -1,13 +1,13 @@
-import LayoutFundamentals from "src/components/layouts/fundamentals";
-import ContentColor from "src/components/organisms/content";
+import { Content } from 'components';
+import ContentColor from "src/components/organisms/content-color";
 import InteractiveColor from "src/components/organisms/interactive";
 import Palette from "src/components/organisms/palette";
 import SemanticColor from "src/components/organisms/semantic";
 
 const PageFundamentalsColor = () => {
   return (
-    <LayoutFundamentals>
-      <h2 className="dl-title-sm mt-5 pb-4 mb-3">Color</h2>
+    <Content title='Fundamentos'>
+      <h2 className="dl-title-sm pb-4 mb-3">Color</h2>
       <p className="pb-4 mb-3 dl-body-xxs">
         Entendamos las semántica de color para ser consistentes.
       </p>
@@ -26,7 +26,7 @@ const PageFundamentalsColor = () => {
       <SemanticColor />
       <InteractiveColor />
       <ContentColor />
-    </LayoutFundamentals>
+    </Content>
   );
 };
 

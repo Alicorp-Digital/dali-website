@@ -12,7 +12,10 @@
     color: #6C6C6C;
   }
 
-  @media screen and (min-width:  992px){
+  @media screen and (min-width: 1200px){
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+
     &__content {
       padding: 48px 32px;
     }
@@ -21,7 +24,6 @@
       font-size: 24px;
       font-weight: 40px;
       padding: 24px 32px;
-      border-radius: 8px 8px 0 0;
     }
   }
 }

@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@alicorpdigital/dali-css-library": "1.32.1-canary.4",
+    "@alicorpdigital/dali-css-library": "1.32.1-canary.7",
     "@alicorpdigital/dali-react-button": "0.0.10-canary.3",
     "@alicorpdigital/dali-react-icon": "^0.0.15",
     "@alicorpdigital/dali-react-interactiveicon": "0.0.2-canary.1",
     "@alicorpdigital/dali-react-link": "0.0.1-canary.0",
-    "@alicorpdigital/dali-react-sidebar": "0.0.1-canary.1",
+    "@alicorpdigital/dali-react-sidebar": "0.0.1-canary.8",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
