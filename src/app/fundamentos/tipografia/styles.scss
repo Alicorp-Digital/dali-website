@@ -1,0 +1,53 @@
+.typography{
+  &-scales {
+    gap: 48px;
+    &-item {
+      gap: 48px
+    }
+  }
+  &-download {
+    color:#E62020 !important;
+  }
+}
+
+
+.usage {
+  &-list {
+    gap: 18px;
+    &-item {
+      max-width: 343px;
+      list-style: none;
+    }
+    &-icon {
+      display: flex;
+      height: 32px;
+      width: 32px;
+    }
+  }
+  &-positive {
+    background-color: #EFFAEF;
+    i {
+      background-color: #008A05;
+    }
+  }
+  &-negative {
+    background-color: #FAEFF3;
+    i {
+      background-color: #DF1978;
+    }
+  }
+}
+
+.variants {
+  &-properties {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .typography {
+    &-alicorp {
+      display: none;
+    }
+  }
+}
