@@ -1,0 +1,25 @@
+.typography{
+  &-scales {
+    gap: 48px;
+    &-item {
+      gap: 48px
+    }
+  }
+  &-download {
+    color:#E62020 !important;
+  }
+}
+
+.variants {
+  &-properties {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .typography {
+    &-alicorp {
+      display: none;
+    }
+  }
+}
