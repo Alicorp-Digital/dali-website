@@ -3,6 +3,9 @@ import TypographyProperties from "src/components/atoms/typography";
 import "./styles.scss";
 import DoDontComponent from "src/components/molecules/dodont";
 
+import DoTypography from "assets/fundaments/typography/do_typography.svg";
+import DontTypography from "assets/fundaments/typography/dont_typography.svg";
+
 const PageFundamentalsTypography = () => {
   const data = [
     {
@@ -48,15 +51,13 @@ const PageFundamentalsTypography = () => {
       action: "positive",
       description:
         "Asegurando una buena legibilidad sólo usamos 12px en legales.",
-      image:
-        "https://res.cloudinary.com/dlp5ey53k/image/upload/v1706198696/fcsfaofp3zxjy5a53lf9.svg",
+      image: DoTypography,
     },
     {
       action: "negative",
       description:
         "Al usar 12px en componentes perdemos legibilidad en nuestros usuarios",
-      image:
-        "https://res.cloudinary.com/dlp5ey53k/image/upload/v1706198696/a11r3om1rj7zfsrgqjqn.svg",
+      image: DontTypography,
     },
   ];
 
@@ -253,7 +254,7 @@ const PageFundamentalsTypography = () => {
           </li>
         ))}
       </ul>
-
+      <h3 className="dl-title-xs my-4 py-3 ">Do & Dont's</h3>
       <DoDontComponent usage={usage} />
 
       <h3 className="dl-title-xs my-4 py-3">Estilos</h3>
