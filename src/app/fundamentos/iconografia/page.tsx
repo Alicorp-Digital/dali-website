@@ -116,21 +116,6 @@ const PageFundamentalsInfographic = () => {
           <span className="dl-body-nano">Fill</span>
         </li>
       </ul>
-      {/* <h3 className="my-4 py-3 dl-title-xs">Color</h3>
-      <p className="dl-body-xxs mb-4 pb-3">
-        Nuestra paleta de colores cumplen con el Contraste estándar AA. esto
-        garantiza un contraste alto en los elementos o Ui para nuestros usuarios
-        y que las personas con bajo nivel de visión puedan ver a interactuar con
-        nuestros productos.
-      </p>
-      <h3 className="my-4 py-3 dl-title-xs">Comunicación en botones</h3>
-      <p className="dl-body-xxs mb-4 pb-3">
-        Para mantener la consistencia en la comunicación con nuestros usuarios.
-        Los textos en accionable como un botón, link, etc deben tener el
-        contexto de la acción ó lo que pasará.
-      </p>
-
-      <DoDontComponent usage={comunication} /> */}
     </LayoutFundamentals>
   );
 };
