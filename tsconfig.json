@@ -24,6 +24,7 @@
       "templates": ["./src/templates"],
       "assets/*": ["./src/assets/*"],
       "types/*": ["./src/toolbox/types/*"],
+      "data-sources/*": ["./src/toolbox/data-sources/*"],
       "styles": ["./src/styles/main.scss"],
     }
   },

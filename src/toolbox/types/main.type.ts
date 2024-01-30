@@ -1,4 +1,4 @@
-export type Scale = {
+export type Size = {
   size: string;
   text: string;
 }
