@@ -1,14 +1,14 @@
-'use client';
+"use client";
 import { FC, ReactNode } from "react";
 import { Header } from "components";
-import './styles.scss';
+import "./styles.scss";
 import { DlSidebar } from "@alicorpdigital/dali-react-sidebar";
 import {DlIcon} from '@alicorpdigital/dali-react-icon'
 import { useRouter } from 'next/navigation';
 
 type Props = {
-  children: ReactNode
-}
+  children: ReactNode;
+};
 
 const LayoutMain: FC<Props> = (props) => {
   const router = useRouter()
@@ -45,7 +45,7 @@ const LayoutMain: FC<Props> = (props) => {
         // {label: 'Accesibilidad', key: 'Accesibilidad', href: '/fundamentos/accesibilidad' },
         // {label: 'Ilustración', key: 'Ilustración', href: '/fundamentos/ilustracion' },
         // {label: 'Espaciados', key: 'Espaciados', href: '/fundamentos/espaciados' },
-        // {label: 'Tipografías', key: 'Tipografias', href: '/fundamentos/tipografias' },
+        {label: 'Tipografías', key: 'Tipografias', href: '/fundamentos/tipografia' },
         // {label: 'Iconografía', key: 'iconografia', href: '/fundamentos/iconografia' },
       ],
     },
@@ -76,7 +76,7 @@ const LayoutMain: FC<Props> = (props) => {
     },
   ]
   return (
-    <div className='dali-layout-main'>
+    <div className="dali-layout-main">
       <Header />
       <div className='dali-layout-main__content'>
         <DlSidebar
@@ -84,12 +84,10 @@ const LayoutMain: FC<Props> = (props) => {
           onClick={event => event.href && router.push(event.href)}
         />
 
-        <div className='dali-layout-main__children'>
-          {children}
-        </div>
+        <div className="dali-layout-main__children">{children}</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default LayoutMain;
