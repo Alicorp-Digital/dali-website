@@ -1,6 +1,6 @@
 import { Content } from 'components';
 import DoDontComponent from "src/components/molecules/dodont";
-import ContentColor from "src/components/organisms/content";
+import ContentColor from "src/components/organisms/content-color";
 import InteractiveColor from "src/components/organisms/interactive";
 import Palette from "src/components/organisms/palette";
 import SemanticColor from "src/components/organisms/semantic";

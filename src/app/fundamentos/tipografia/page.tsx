@@ -1,10 +1,11 @@
 import { Content } from "components";
 import TypographyProperties from "src/components/atoms/typography";
-import "./styles.scss";
 import DoDontComponent from "src/components/molecules/dodont";
+import { Scale } from 'types/main.type';
+import "./styles.scss";
 
 const PageFundamentalsTypography = () => {
-  const data = [
+  const data: Scale[] = [
     {
       size: "0.75",
       text: "Sans 12",

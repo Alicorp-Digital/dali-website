@@ -23,6 +23,7 @@
       "components": ["./src/components"],
       "templates": ["./src/templates"],
       "assets/*": ["./src/assets/*"],
+      "types/*": ["./src/toolbox/types/*"],
       "styles": ["./src/styles/main.scss"],
     }
   },

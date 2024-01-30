@@ -3,9 +3,9 @@ import "./styles.scss";
 export default function DoDontComponent(props: any) {
   return (
     <>
-      <h3 className="dl-title-xs my-4 py-3 ">Do & Dont's</h3>
+      <h3 className="dl-title-xs my-4 py-3 ">{"Do & Dont's"}</h3>
       <ul className="d-flex justify-content-between usage-list flex-wrap">
-        {props.usage.map((item, index) => (
+        {props.usage.map((item: any, index: number) => (
           <li className="usage-list-item" key={index}>
             <figure className={"usage-" + item.action}>
               <img src={item.image} alt="" />
