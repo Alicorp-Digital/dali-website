@@ -38,7 +38,8 @@ export default function Palette() {
               <li
                 className="palette-item rounded"
                 style={{ backgroundColor: color }}
-              ></li>
+                key={color}
+              />
             ))}
           </ul>
         </li>

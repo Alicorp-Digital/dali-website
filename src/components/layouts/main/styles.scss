@@ -13,14 +13,14 @@
     }
   }
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1200px) {
     grid-template-rows: 72px 1fr;
 
     &__content {
       display: flex;
       .dl-sidebar {
         display: block;
-        min-width: 250px;
+        min-width: 320px;
       }
     }
 

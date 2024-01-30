@@ -1,3 +1,4 @@
+import { Scale } from 'types/main.type';
 import "./styles.scss";
 
 const TypographyProperties = (props: any) => {
@@ -26,7 +27,7 @@ const TypographyProperties = (props: any) => {
           </span>
           <div className="dl-subtitle-nano flex-grow-1">Propiedad</div>
         </div>
-        {props?.sizes.map((item, index) => (
+        {props?.sizes.map((item: any, index: number) => (
           <li
             className="d-flex align-items-center justify-content-between mb-3"
             key={index}
