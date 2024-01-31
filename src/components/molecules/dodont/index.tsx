@@ -1,14 +1,19 @@
 import "./styles.scss";
+import Image from "next/image";
 
 export default function DoDontComponent(props: any) {
   return (
     <>
-      <h3 className="dl-title-xs my-4 py-3 ">{"Do & Dont's"}</h3>
-      <ul className="d-flex justify-content-between usage-list flex-wrap">
+      <ul className="d-flex justify-content-between usage-list mb-0 flex-wrap">
         {props.usage.map((item: any, index: number) => (
           <li className="usage-list-item" key={index}>
-            <figure className={"usage-" + item.action}>
-              <img src={item.image} alt="" />
+            <figure className={"mb-0 usage-" + item.action}>
+              <Image
+                width={343}
+                height={160}
+                src={item.image}
+                alt={item.action}
+              />
               <figcaption className="p-3">
                 <span className="d-flex align-items-center text-capitalize dl-body-xxs">
                   <i

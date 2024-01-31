@@ -5,21 +5,22 @@ import InteractiveColor from "src/components/organisms/interactive";
 import Palette from "src/components/organisms/palette";
 import SemanticColor from "src/components/organisms/semantic";
 
+import DoColor from "assets/fundaments/color/do_color.svg";
+import DontColor from "assets/fundaments/color/dont_color.svg";
+
 const PageFundamentalsColor = () => {
   const usage = [
     {
       action: "positive",
       description:
         "Los colores neutral darkest y dark son accesibles para el usuario.",
-      image:
-        "https://res.cloudinary.com/dlp5ey53k/image/upload/v1706273139/bbukvkmp55p8uhtxffnt.svg",
+      image: DoColor,
     },
     {
       action: "negative",
       description:
         "El color medium aplicado en contenido sufre por visibilidad.",
-      image:
-        "https://res.cloudinary.com/dlp5ey53k/image/upload/v1706273139/us4pcv9lqb1uwo0holge.svg",
+      image: DontColor,
     },
   ];
 
@@ -44,6 +45,7 @@ const PageFundamentalsColor = () => {
       <SemanticColor />
       <InteractiveColor />
       <ContentColor />
+      <h3 className="dl-title-xs my-4 py-3 ">Do & Dont's</h3>
       <DoDontComponent usage={usage} />
     </Content>
   );

@@ -1,11 +1,14 @@
 import { Content } from "components";
 import TypographyProperties from "src/components/atoms/typography";
 import DoDontComponent from "src/components/molecules/dodont";
-import { Scale } from 'types/main.type';
+import { Size } from "types/main.type";
 import "./styles.scss";
 
+import DoTypography from "assets/fundaments/typography/do_typography.svg";
+import DontTypography from "assets/fundaments/typography/dont_typography.svg";
+
 const PageFundamentalsTypography = () => {
-  const data: Scale[] = [
+  const data: Size[] = [
     {
       size: "0.75",
       text: "Sans 12",
@@ -49,15 +52,13 @@ const PageFundamentalsTypography = () => {
       action: "positive",
       description:
         "Asegurando una buena legibilidad sólo usamos 12px en legales.",
-      image:
-        "https://res.cloudinary.com/dlp5ey53k/image/upload/v1706198696/fcsfaofp3zxjy5a53lf9.svg",
+      image: DoTypography,
     },
     {
       action: "negative",
       description:
         "Al usar 12px en componentes perdemos legibilidad en nuestros usuarios",
-      image:
-        "https://res.cloudinary.com/dlp5ey53k/image/upload/v1706198696/a11r3om1rj7zfsrgqjqn.svg",
+      image: DontTypography,
     },
   ];
 
@@ -202,8 +203,8 @@ const PageFundamentalsTypography = () => {
   ];
 
   return (
-    <Content title='Fundamentos'>
-      <h2 className="dl-title-sm mt-5 pb-4 mb-3">Tipografía</h2>
+    <Content title="Fundamentos">
+      <h2 className="dl-title-sm pb-4 mb-3">Tipografía</h2>
       <p className="pb-4 mb-3 dl-body-xxs">
         Alicorp Sans en una tipografía de bajo contraste, con unas proporciones
         ligeramente condensadas, queriendo resaltar valores de marca con algunas
@@ -254,7 +255,7 @@ const PageFundamentalsTypography = () => {
           </li>
         ))}
       </ul>
-
+      <h3 className="dl-title-xs my-4 py-3 ">Do & Dont's</h3>
       <DoDontComponent usage={usage} />
 
       <h3 className="dl-title-xs my-4 py-3">Estilos</h3>

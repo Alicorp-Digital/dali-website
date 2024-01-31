@@ -26,6 +26,7 @@
       "types/*": ["./src/toolbox/types/*"],
       "data-sources/*": ["./src/toolbox/data-sources/*"],
       "styles": ["./src/styles/main.scss"],
+      "assets": ["./src/assets"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
