@@ -57,7 +57,7 @@ const PageFundamentalsInfographic = () => {
 
   return (
     <Content title="Fundamentos">
-      <h2 className="dl-title-sm mb-4 pb-3 mt-5">Iconografía</h2>
+      <h2 className="dl-title-sm mb-4 pb-3">Iconografía</h2>
       <p className="dl-body-xxs">
         Los Iconos simplifican la comprensión mensajes y reducen la carga
         cognitiva cuando necesitas prestar atención a tareas urgentes

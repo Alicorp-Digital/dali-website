@@ -204,7 +204,7 @@ const PageFundamentalsTypography = () => {
 
   return (
     <Content title="Fundamentos">
-      <h2 className="dl-title-sm mt-5 pb-4 mb-3">Tipografía</h2>
+      <h2 className="dl-title-sm pb-4 mb-3">Tipografía</h2>
       <p className="pb-4 mb-3 dl-body-xxs">
         Alicorp Sans en una tipografía de bajo contraste, con unas proporciones
         ligeramente condensadas, queriendo resaltar valores de marca con algunas
