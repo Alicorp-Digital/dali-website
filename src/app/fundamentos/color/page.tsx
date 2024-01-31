@@ -1,6 +1,6 @@
-import LayoutFundamentals from "src/components/layouts/fundamentals";
+import { Content } from 'components';
 import DoDontComponent from "src/components/molecules/dodont";
-import ContentColor from "src/components/organisms/content";
+import ContentColor from "src/components/organisms/content-color";
 import InteractiveColor from "src/components/organisms/interactive";
 import Palette from "src/components/organisms/palette";
 import SemanticColor from "src/components/organisms/semantic";
@@ -25,8 +25,8 @@ const PageFundamentalsColor = () => {
   ];
 
   return (
-    <LayoutFundamentals>
-      <h2 className="dl-title-sm mt-5 pb-4 mb-3">Color</h2>
+    <Content title='Fundamentos'>
+      <h2 className="dl-title-sm pb-4 mb-3">Color</h2>
       <p className="pb-4 mb-3 dl-body-xxs">
         Entendamos las semántica de color para ser consistentes.
       </p>
@@ -47,7 +47,7 @@ const PageFundamentalsColor = () => {
       <ContentColor />
       <h3 className="dl-title-xs my-4 py-3 ">Do & Dont's</h3>
       <DoDontComponent usage={usage} />
-    </LayoutFundamentals>
+    </Content>
   );
 };
 

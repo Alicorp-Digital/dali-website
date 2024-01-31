@@ -14,7 +14,6 @@ export default function DoDontComponent(props: any) {
                 src={item.image}
                 alt={item.action}
               />
-              <img src={item.image} alt="" />
               <figcaption className="p-3">
                 <span className="d-flex align-items-center text-capitalize dl-body-xxs">
                   <i

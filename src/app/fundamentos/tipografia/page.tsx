@@ -1,13 +1,14 @@
-import LayoutFundamentals from "src/components/layouts/fundamentals";
+import { Content } from "components";
 import TypographyProperties from "src/components/atoms/typography";
-import "./styles.scss";
 import DoDontComponent from "src/components/molecules/dodont";
+import { Size } from "types/main.type";
+import "./styles.scss";
 
 import DoTypography from "assets/fundaments/typography/do_typography.svg";
 import DontTypography from "assets/fundaments/typography/dont_typography.svg";
 
 const PageFundamentalsTypography = () => {
-  const data = [
+  const data: Size[] = [
     {
       size: "0.75",
       text: "Sans 12",
@@ -202,7 +203,7 @@ const PageFundamentalsTypography = () => {
   ];
 
   return (
-    <LayoutFundamentals>
+    <Content title="Fundamentos">
       <h2 className="dl-title-sm mt-5 pb-4 mb-3">Tipografía</h2>
       <p className="pb-4 mb-3 dl-body-xxs">
         Alicorp Sans en una tipografía de bajo contraste, con unas proporciones
@@ -277,7 +278,7 @@ const PageFundamentalsTypography = () => {
           sizes={item.sizes}
         />
       ))}
-    </LayoutFundamentals>
+    </Content>
   );
 };
 

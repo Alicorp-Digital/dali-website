@@ -1,4 +1,4 @@
-import LayoutFundamentals from "src/components/layouts/fundamentals";
+import { Content } from "components";
 
 import DoIcon from "assets/fundaments/iconography/do_icon.svg";
 import DontICon from "assets/fundaments/iconography/dont_icon.svg";
@@ -56,7 +56,7 @@ const PageFundamentalsInfographic = () => {
   ];
 
   return (
-    <LayoutFundamentals>
+    <Content title="Fundamentos">
       <h2 className="dl-title-sm mb-4 pb-3 mt-5">Iconografía</h2>
       <p className="dl-body-xxs">
         Los Iconos simplifican la comprensión mensajes y reducen la carga
@@ -116,7 +116,7 @@ const PageFundamentalsInfographic = () => {
           <span className="dl-body-nano">Fill</span>
         </li>
       </ul>
-    </LayoutFundamentals>
+    </Content>
   );
 };
 

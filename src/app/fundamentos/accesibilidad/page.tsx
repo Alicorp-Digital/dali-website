@@ -1,4 +1,4 @@
-import LayoutFundamentals from "src/components/layouts/fundamentals";
+import { Content } from "components";
 
 import DoImage from "assets/fundaments/accesibility/do_accesibility.svg";
 import DontImage from "assets/fundaments/accesibility/dont_accesibility.svg";
@@ -38,7 +38,7 @@ const PageFundamentalsAccesibility = () => {
   ];
 
   return (
-    <LayoutFundamentals>
+    <Content title="Fundamentos">
       <h2 className="dl-title-sm mb-4 pb-3 mt-5">Accesibilidad</h2>
       <p className="dl-body-xxs">
         Los Iconos simplifican la comprensión mensajes y reducen la carga
@@ -72,7 +72,7 @@ const PageFundamentalsAccesibility = () => {
       </p>
 
       <DoDontComponent usage={comunication} />
-    </LayoutFundamentals>
+    </Content>
   );
 };
 
