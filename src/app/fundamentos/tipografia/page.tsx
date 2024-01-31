@@ -255,7 +255,7 @@ const PageFundamentalsTypography = () => {
           </li>
         ))}
       </ul>
-      <h3 className="dl-title-xs my-4 py-3 ">Do & Dont's</h3>
+      <h3 className="dl-title-xs my-4 py-3 ">{"Do & Dont's"}</h3>
       <DoDontComponent usage={usage} />
 
       <h3 className="dl-title-xs my-4 py-3">Estilos</h3>
