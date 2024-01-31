@@ -1,4 +1,3 @@
-import { Scale } from 'types/main.type';
 import "./styles.scss";
 
 const TypographyProperties = (props: any) => {
