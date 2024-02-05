@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function DoDontComponent(props: any) {
   return (
     <>
-      <ul className="d-flex justify-content-between usage-list mb-0 flex-wrap">
+      <ul className="d-flex usage-list mb-0 flex-wrap">
         {props.usage.map((item: any, index: number) => (
           <li className="usage-list-item" key={index}>
             <figure className={"mb-0 usage-" + item.action}>

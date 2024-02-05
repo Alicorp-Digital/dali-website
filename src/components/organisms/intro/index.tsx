@@ -18,7 +18,7 @@ export default function Intro() {
       <div className="intro-container-video">
         <iframe
           className="intro-video"
-          src="https://player.vimeo.com/video/595394325?h=0ab31c1238?autoplay=1&loop=1&background=1"
+          src="https://player.vimeo.com/video/595394325?h=0ab31c1238"
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowFullScreen
