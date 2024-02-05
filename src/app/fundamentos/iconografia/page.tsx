@@ -1,4 +1,6 @@
 import { Content } from "components";
+import styles from "./styles.module.scss";
+import classNames from "classnames";
 
 import DoIcon from "assets/fundaments/iconography/do_icon.svg";
 import DontICon from "assets/fundaments/iconography/dont_icon.svg";
@@ -55,6 +57,33 @@ const PageFundamentalsInfographic = () => {
     },
   ];
 
+  const sizes = [
+    {
+      size: "16px",
+      description: "Pequeño",
+    },
+    {
+      size: "24px",
+      description: "Mediano",
+    },
+    {
+      size: "32px",
+      description: "Grande",
+    },
+  ];
+
+  const variants = [
+    {
+      action: "Regular",
+    },
+    {
+      action: "Bold",
+    },
+    {
+      action: "Fill",
+    },
+  ];
+
   return (
     <Content title="Fundamentos">
       <h2 className="dl-title-sm mb-4 pb-3">Iconografía</h2>
@@ -84,37 +113,43 @@ const PageFundamentalsInfographic = () => {
         Con un sistema de tamaño aseguramos un uso consistente y sobre todo la
         accesibilidad visual de nuestros usuarios.
       </p>
-      <ul className="d-flex justify-content-around mb-0">
-        <li className="d-flex flex-column align-items-center justify-content-between">
-          <i className="dl-icon dli-gift-regular dl-icon-sm"></i>
-          <span className="dl-body-nano">16px</span>
-          <span className="dl-body-nano">Pequeño</span>
-        </li>
-        <li className="d-flex flex-column align-items-center justify-content-between">
-          <i className="dl-icon dli-gift-regular dl-icon-md"></i>
-          <span className="dl-body-nano">24px</span>
-          <span className="dl-body-nano">Mediano</span>
-        </li>
-        <li className="d-flex flex-column align-items-center justify-content-between">
-          <i className="dl-icon dli-gift-regular dl-icon-lg"></i>
-          <span className="dl-body-nano">32px</span>
-          <span className="dl-body-nano">Grande</span>
-        </li>
+      <ul className={`d-flex mb-0 align-items-end ${styles.iconContainer}`}>
+        {sizes.map((item, index) => (
+          <li
+            className={`d-flex flex-column align-items-center ${styles.iconList}`}
+            key={index}
+          >
+            <i
+              className={classNames("dli-icon", "dli-gift-regular", {
+                "dl-icon-sm": item.size === "16px",
+                "dl-icon-md": item.size === "24px",
+                "dl-icon-lg": item.size === "32px",
+                [styles.iconSecondary]: true,
+              })}
+            ></i>
+            <span className="dl-body-nano">{item.size}</span>
+            <span className="dl-body-nano">{item.description}</span>
+          </li>
+        ))}
       </ul>
       <h3 className="my-4 py-3 dl-title-xs">Variantes</h3>
-      <ul className="d-flex justify-content-around mb-0">
-        <li className="d-flex flex-column align-items-center">
-          <i className="dl-icon dli-gift-regular dl-icon-lg"></i>
-          <span className="dl-body-nano">Regular</span>
-        </li>
-        <li className="d-flex flex-column align-items-center">
-          <i className="dl-icon dli-gift-bold dl-icon-lg"></i>
-          <span className="dl-body-nano">Bold</span>
-        </li>
-        <li className="d-flex flex-column align-items-center">
-          <i className="dl-icon dli-gift-fill dl-icon-lg"></i>
-          <span className="dl-body-nano">Fill</span>
-        </li>
+      <ul className={`d-flex mb-0  ${styles.iconContainer}`}>
+        {variants.map((item, index) => (
+          <li
+            className={`d-flex flex-column align-items-center ${styles.iconList}`}
+            key={index}
+          >
+            <i
+              className={classNames("dli-icon", "dl-icon-lg", {
+                "dli-gift-regular": item.action === "Regular",
+                "dli-gift-bold": item.action === "Bold",
+                "dli-gift-fill": item.action === "Fill",
+                [styles.iconPrimary]: true,
+              })}
+            ></i>
+            <span className="dl-body-nano">{item.action}</span>
+          </li>
+        ))}
       </ul>
     </Content>
   );

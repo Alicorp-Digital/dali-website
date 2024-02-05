@@ -2,6 +2,7 @@ import Team from "src/components/organisms/team";
 import "./styles.scss";
 import Banner from "src/components/organisms/banner";
 import Intro from "src/components/organisms/intro";
+import Image from "next/image";
 
 const Home = () => {
   return (
