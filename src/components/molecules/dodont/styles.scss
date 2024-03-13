@@ -1,0 +1,30 @@
+.usage {
+  &-list {
+    gap: 18px;
+
+    &-item {
+      max-width: 343px;
+      list-style: none;
+    }
+
+    &-icon {
+      display: flex;
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  &-positive {
+    background-color: #EFFAEF;
+    i {
+      background-color: #008A05;
+    }
+  }
+
+  &-negative {
+    background-color: #FAEFF3;
+    i {
+      background-color: #DF1978;
+    }
+  }
+}

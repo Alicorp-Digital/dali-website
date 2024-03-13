@@ -1,0 +1,39 @@
+.dali-layout-main {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 64px 1fr;
+
+  &__content {
+    background-color: #F7F7F7;
+
+    .dl-sidebar {
+      position: absolute;
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-rows: 72px 1fr;
+
+    &__content {
+      display: flex;
+
+      .dl-sidebar {
+        position: static;
+        display: block;
+        min-width: 320px;
+        max-width: 320px;
+        height: 100%;
+      }
+    }
+
+    &__children {
+      padding: 72px 76px 72px 46px ;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}

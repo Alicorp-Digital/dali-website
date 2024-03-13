@@ -1,0 +1,21 @@
+.team-list {
+  gap: 24px;
+  max-width: 890px;
+}
+
+.team-member {
+  list-style: none;
+  text-align: center;
+  width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .team {
+    &-list {
+      max-width: 100%;
+    }
+  }
+  .team-member {
+    width: 45%;
+  }
+}

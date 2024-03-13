@@ -1,16 +1,19 @@
-import './styles.scss';
+import Team from "src/components/organisms/team";
+import "./styles.scss";
+import Banner from "src/components/organisms/banner";
+import Intro from "src/components/organisms/intro";
+import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className='dl-home'>
-      <div className='dl-home__content'>
-        content
+    <>
+      <div className="mb-5">
+        <Banner />
+        <Intro />
+        <Team />
       </div>
-      <div className='dl-home__content--modifier'>
-        modifier
-      </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
 export default Home;

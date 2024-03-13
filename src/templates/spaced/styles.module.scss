@@ -1,0 +1,42 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  > p {
+    margin-bottom: 0;
+  }
+
+  .Scales {
+    .ScalesHeader,
+    .ScaleItem {
+      display: grid;
+      grid-template-columns: 88px 127px 127px;
+    }
+
+    .ScalesBody {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .ScaleVisual {
+      background-color: #E96767;
+      height: 24px;
+    }
+  }
+
+  @media screen and (min-width: 768px){
+    .Scales {
+      .ScalesHeader,
+      .ScaleItem {
+        gap: 24px;
+      }
+
+      .ScaleItem {
+        grid-template-columns: 88px 127px 140px;
+      }
+    }
+  }
+}
