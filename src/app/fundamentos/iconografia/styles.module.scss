@@ -11,3 +11,11 @@
   width: 64px;
   gap: 4px
 }
+
+.SizeList,
+.VariantList {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 480px;
+}

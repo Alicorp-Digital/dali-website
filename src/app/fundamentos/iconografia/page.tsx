@@ -1,5 +1,5 @@
 import { Content } from "components";
-import styles from "./styles.module.scss";
+import css from "./styles.module.scss";
 import classNames from "classnames";
 
 import DoIcon from "assets/fundaments/iconography/do_icon.svg";
@@ -113,10 +113,10 @@ const PageFundamentalsInfographic = () => {
         Con un sistema de tamaño aseguramos un uso consistente y sobre todo la
         accesibilidad visual de nuestros usuarios.
       </p>
-      <ul className={`d-flex mb-0 align-items-end ${styles.iconContainer}`}>
+      <ul className={css.SizeList}>
         {sizes.map((item, index) => (
           <li
-            className={`d-flex flex-column align-items-center ${styles.iconList}`}
+            className={`d-flex flex-column align-items-center ${css.iconList}`}
             key={index}
           >
             <i
@@ -124,7 +124,7 @@ const PageFundamentalsInfographic = () => {
                 "dl-icon-sm": item.size === "16px",
                 "dl-icon-md": item.size === "24px",
                 "dl-icon-lg": item.size === "32px",
-                [styles.iconSecondary]: true,
+                [css.iconSecondary]: true,
               })}
             ></i>
             <span className="dl-body-nano">{item.size}</span>
@@ -133,10 +133,10 @@ const PageFundamentalsInfographic = () => {
         ))}
       </ul>
       <h3 className="my-4 py-3 dl-title-xs">Variantes</h3>
-      <ul className={`d-flex mb-0  ${styles.iconContainer}`}>
+      <ul className={css.VariantList}>
         {variants.map((item, index) => (
           <li
-            className={`d-flex flex-column align-items-center ${styles.iconList}`}
+            className={`d-flex flex-column align-items-center ${css.iconList}`}
             key={index}
           >
             <i
@@ -144,7 +144,7 @@ const PageFundamentalsInfographic = () => {
                 "dli-gift-regular": item.action === "Regular",
                 "dli-gift-bold": item.action === "Bold",
                 "dli-gift-fill": item.action === "Fill",
-                [styles.iconPrimary]: true,
+                [css.iconPrimary]: true,
               })}
             ></i>
             <span className="dl-body-nano">{item.action}</span>

@@ -9,6 +9,10 @@
     grid-gap: 48px 19px;
   }
 
+  &__library-title {
+    color: #6C6C6C;
+  }
+
   &__library {
     display: flex;
     align-items: center;
@@ -16,7 +20,7 @@
     text-align: center;
 
     &-content {
-      box-shadow: 0px 17.677242279052734px 35.35448455810547px -8.838621139526367px #85858529;
+      box-shadow: 0px 17px 35px -8px #85858529;
       width: 100%;
       max-width: 118px;
       height: 118px;

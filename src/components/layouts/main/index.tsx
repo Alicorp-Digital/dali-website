@@ -1,5 +1,5 @@
 "use client";
-import { FC, ReactNode } from "react";
+import { FC, ReactNode, useEffect, useState } from "react";
 import { Header } from "components";
 import "./styles.scss";
 import { DlSidebar } from "@alicorpdigital/dali-react-sidebar";
@@ -12,6 +12,7 @@ type Props = {
 
 const LayoutMain: FC<Props> = (props) => {
   const router = useRouter();
+  const [openSidebar, setOpenSidebar] = useState<boolean>(false);
   const { children } = props;
 
   const items = [
@@ -33,16 +34,16 @@ const LayoutMain: FC<Props> = (props) => {
         },
       ],
     },
-    {
-      label: "Brand",
-      key: "brand",
-      icon: <DlIcon name="agenda" />,
-      children: [
-        { label: "Introducción", key: "Introducción" },
-        { label: "Para Diseño", key: "Para Diseño" },
-        { label: "Para Desarrollo", key: "Para Desarrollo" },
-      ],
-    },
+    // {
+    //   label: "Brand",
+    //   key: "brand",
+    //   icon: <DlIcon name="agenda" />,
+    //   children: [
+    //     { label: "Introducción", key: "Introducción" },
+    //     { label: "Para Diseño", key: "Para Diseño" },
+    //     { label: "Para Desarrollo", key: "Para Desarrollo" },
+    //   ],
+    // },
     {
       label: "Fundamentos",
       key: "fundaments",
@@ -56,7 +57,7 @@ const LayoutMain: FC<Props> = (props) => {
           href: "/fundamentos/accesibilidad",
         },
         // {label: 'Ilustración', key: 'Ilustración', href: '/fundamentos/ilustracion' },
-        // {label: 'Espaciados', key: 'Espaciados', href: '/fundamentos/espaciados' },
+        {label: 'Espaciados', key: 'Espaciados', href: '/fundamentos/espaciados' },
         {
           label: "Tipografías",
           key: "Tipografias",
@@ -69,39 +70,56 @@ const LayoutMain: FC<Props> = (props) => {
         },
       ],
     },
-    {
-      label: "Tokens",
-      key: "tokens",
-      icon: <DlIcon name="tree-view" />,
-      children: [
-        { label: "Introducción", key: "Introducción" },
-        { label: "Para Diseño", key: "Para Diseño" },
-        { label: "Para Desarrollo", key: "Para Desarrollo" },
-      ],
-    },
-    {
-      label: "Componentes",
-      key: "components",
-      icon: <DlIcon name="star" />,
-    },
-    {
-      label: "Patrones",
-      key: "patters",
-      icon: <DlIcon name="package" />,
-    },
-    {
-      label: "Soporte",
-      key: "support",
-      icon: <DlIcon name="education" />,
-    },
+    // {
+    //   label: "Tokens",
+    //   key: "tokens",
+    //   icon: <DlIcon name="tree-view" />,
+    //   children: [
+    //     { label: "Introducción", key: "Introducción" },
+    //     { label: "Para Diseño", key: "Para Diseño" },
+    //     { label: "Para Desarrollo", key: "Para Desarrollo" },
+    //   ],
+    // },
+    // {
+    //   label: "Componentes",
+    //   key: "components",
+    //   icon: <DlIcon name="star" />,
+    // },
+    // {
+    //   label: "Patrones",
+    //   key: "patters",
+    //   icon: <DlIcon name="package" />,
+    // },
+    // {
+    //   label: "Soporte",
+    //   key: "support",
+    //   icon: <DlIcon name="education" />,
+    // },
   ];
+
+  const handleChangeSidebar = () => {
+    setOpenSidebar(!openSidebar);
+  }
+
+  useEffect(() => {
+    if (openSidebar) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'visible';
+    }
+  }, [openSidebar])
+
   return (
     <div className="dali-layout-main">
-      <Header />
+      <Header hamburgerChange={handleChangeSidebar} />
       <div className="dali-layout-main__content">
         <DlSidebar
           items={items}
-          onClick={(event) => event.href && router.push(event.href)}
+          open={openSidebar}
+          onClick={(event) => {
+            event.href && router.push(event.href);
+            setOpenSidebar(false);
+          }}
         />
 
         <div className="dali-layout-main__children">{children}</div>

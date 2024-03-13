@@ -6,14 +6,18 @@ import dali from 'assets/header/dali.svg';
 
 import './styles.scss';
 
-type Props = {}
+type Props = {
+  hamburgerChange?: () => void;
+}
 
-const Header: FC<Props> = () => {
+const Header: FC<Props> = (props) => {
+  const { hamburgerChange } = props;
+
   return (
     <div className='dali-header'>
       <div className='dali-header__content'>
         <div className='dali-header__left-content'>
-          <DlInteractiveIcon iconName='hamburger' />
+          <DlInteractiveIcon iconName='hamburger' onClick={hamburgerChange} />
           <Image width={110} height={24} src={dali.src} alt='logo-dali' />
         </div>
         <div>

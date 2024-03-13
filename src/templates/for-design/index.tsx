@@ -18,7 +18,7 @@ const items = [
     image: globalTokens.src,
     width: globalTokens.width,
     height: globalTokens.height,
-    title: 'Dali Global tokens',
+    title: 'Dali Global <br /> tokens',
   },
   {
     image: daliIcons.src,
@@ -30,37 +30,37 @@ const items = [
     image: alicorpComponents.src,
     width: alicorpComponents.width,
     height: alicorpComponents.height,
-    title: 'Dali Alicorp components',
+    title: 'Dali Alicorp <br /> components',
   },
   {
     image: alicorpTokens.src,
     width: alicorpTokens.width,
     height: alicorpTokens.height,
-    title: 'Dali Alicorp tokens',
+    title: 'Dali Alicorp <br /> tokens',
   },
   {
     image: diadiaComponents.src,
     width: diadiaComponents.width,
     height: diadiaComponents.height,
-    title: 'Dali Díadía components',
+    title: 'Dali Díadía <br /> components',
   },
   {
     image: diadiaTokens.src,
     width: diadiaTokens.width,
     height: diadiaTokens.height,
-    title: 'Dali Díadía tokens',
+    title: 'Dali Díadía <br /> tokens',
   },
   {
     image: insumaComponents.src,
     width: insumaComponents.width,
     height: insumaComponents.height,
-    title: 'Dali Insuma components',
+    title: 'Dali Insuma <br /> components',
   },
   {
     image: insumaTokens.src,
     width: insumaTokens.width,
     height: insumaTokens.height,
-    title: 'Dali Insuma tokens',
+    title: 'Dali Insuma <br /> tokens',
   },
 ]
 
@@ -79,7 +79,7 @@ const ForDesign = () => {
         Ir a soporte
         <DlIcon name="caret-right" />
       </DlLink>
-      <h4 className='dl-subtitle-xxs'>Nuestras librerías</h4>
+      <h4 className='dl-subtitle-xxs dali-for-design__library-title'>Nuestras librerías</h4>
       <div className='dali-for-design__libraries'>
         {items.map((item) => {
           return (
@@ -87,7 +87,10 @@ const ForDesign = () => {
               <div className='dali-for-design__library-content'>
                 <Image src={item.image} width={item.width} height={item.height} alt={item.title} />
               </div>
-              <p className='dl-subtitle-xxs'>{item.title}</p>
+              <p
+                className='dl-subtitle-xxs'
+                dangerouslySetInnerHTML={{ __html: item.title }}
+              />
             </div>
           )
         })}
