@@ -1,5 +1,5 @@
 "use client";
-import { FC, ReactNode, useEffect, useState } from "react";
+import { FC, ReactNode, useEffect, useLayoutEffect, useState } from "react";
 import { Header } from "components";
 import "./styles.scss";
 import { DlSidebar } from "@alicorpdigital/dali-react-sidebar";
@@ -108,6 +108,14 @@ const LayoutMain: FC<Props> = (props) => {
       document.body.style.overflow = 'visible';
     }
   }, [openSidebar])
+
+  useLayoutEffect(() => {
+    const auth = sessionStorage.getItem('@auth');
+    if (!auth && auth !== '1') {
+      router.push('/iniciar-sesion');
+    }
+  }, [])
+
 
   return (
     <div className="dali-layout-main">

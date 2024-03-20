@@ -1,0 +1,61 @@
+.container {
+  min-height: 100vh;
+  height: 100%;
+
+  .contentLeft {
+    display: flex;
+    position: relative;
+    height: 160px;
+  }
+
+  .contentRight {
+    padding: 16px;
+  }
+
+  .contentRightTitle {
+    font-size: 24px;
+    color: #2F1515;
+    margin-bottom: 24px;
+    margin-top: 40px;
+  }
+
+  .contentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contentFormInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 520px;
+
+    .contentLeft {
+      min-height: 100vh;
+      height: 100%;
+    }
+
+    .contentRight {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      padding: 88px;
+    }
+  }
+}
+
+.registerNow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.consult {
+  text-align: center;
+}

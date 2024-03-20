@@ -6,20 +6,29 @@ settings:
 
 dependencies:
   '@alicorpdigital/dali-css-library':
-    specifier: 1.32.1-canary.7
-    version: 1.32.1-canary.7
+    specifier: 1.32.1-canary.14
+    version: 1.32.1-canary.14
   '@alicorpdigital/dali-react-button':
     specifier: 0.0.10-canary.3
     version: 0.0.10-canary.3
+  '@alicorpdigital/dali-react-divider':
+    specifier: ^0.0.3
+    version: 0.0.3
   '@alicorpdigital/dali-react-icon':
     specifier: ^0.0.15
     version: 0.0.15
+  '@alicorpdigital/dali-react-input':
+    specifier: 0.0.1-canary.4
+    version: 0.0.1-canary.4
   '@alicorpdigital/dali-react-interactiveicon':
     specifier: 0.0.2-canary.1
     version: 0.0.2-canary.1
   '@alicorpdigital/dali-react-link':
     specifier: 0.0.1-canary.0
     version: 0.0.1-canary.0
+  '@alicorpdigital/dali-react-select':
+    specifier: 0.0.1-canary.2
+    version: 0.0.1-canary.2
   '@alicorpdigital/dali-react-sidebar':
     specifier: 0.0.1-canary.8
     version: 0.0.1-canary.8
@@ -66,16 +75,24 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@alicorpdigital/dali-css-library@1.32.1-canary.7:
-    resolution: {integrity: sha512-jqjh6+PXfwIUHXrJRRIEG3a/Cla7R4dcrjw/lI2gIn3i/MySxv8LwqWEynnMNwVLHB72M+ZKFprM6u1mfMabHQ==}
+  /@alicorpdigital/dali-css-library@1.32.1-canary.14:
+    resolution: {integrity: sha512-gVHPNdp1Ss3shMCwY0o/jV4fKMvIVHp/BUwh9mYnybRW70brgSQpAPFmAD9PigxvPVAfraZwssVY4lPsWUaafg==}
     dev: false
 
   /@alicorpdigital/dali-react-button@0.0.10-canary.3:
     resolution: {integrity: sha512-ZDIhf2Jh4EJ/pyYXFpC1I5IaUvIdtay/KpG2zkOzYQt4eEWlhod1wswUQ4kMJlD4anYHxrkd71STOcCWPaN4aQ==}
     dev: false
 
+  /@alicorpdigital/dali-react-divider@0.0.3:
+    resolution: {integrity: sha512-F0Bc0FLOMiNVKgtaZvw2yFXDvWJ6Nr2o2QEjRs4zphp428WbLEVFfsJeppCSbB7dlhzcLmU46w1Wa4qGNfO9sw==}
+    dev: false
+
   /@alicorpdigital/dali-react-icon@0.0.15:
     resolution: {integrity: sha512-mYLkUcsPxxpyZil7flB9LgvXRVMpr2+FgEhGIT8m6la22LcWd3ScmCtuKJY+BV5dTo5n6EO6AQr5+FnQxspkwA==}
+    dev: false
+
+  /@alicorpdigital/dali-react-input@0.0.1-canary.4:
+    resolution: {integrity: sha512-BiMkketgItS1wc9wkiUOWe4rbqqlRG7VfTodptkwmbXOHfsPabACpVZ3HglkbO9QIMqXVIlqPg/FNREMJ7WMlw==}
     dev: false
 
   /@alicorpdigital/dali-react-interactiveicon@0.0.2-canary.1:
@@ -84,6 +101,10 @@ packages:
 
   /@alicorpdigital/dali-react-link@0.0.1-canary.0:
     resolution: {integrity: sha512-pDNqiCPezQiL6bPgjRwZRSuJsrq1z4SBmQyWMyRoJmREl7ASfJyf9679z9MtOLupCeiGdWL31MTryS48Z2ToSw==}
+    dev: false
+
+  /@alicorpdigital/dali-react-select@0.0.1-canary.2:
+    resolution: {integrity: sha512-lKHWV52lCjov0x5W6nw9iR7NUmBArEmajNnCh81tuMke0I0HznHIRiuGJOCFqZkSALgp1OEdU+zXJTYdXosjfQ==}
     dev: false
 
   /@alicorpdigital/dali-react-sidebar@0.0.1-canary.8:

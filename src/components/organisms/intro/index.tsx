@@ -19,7 +19,6 @@ export default function Intro() {
         <iframe
           className="intro-video"
           src="https://player.vimeo.com/video/595394325?h=0ab31c1238"
-          frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowFullScreen
         ></iframe>
