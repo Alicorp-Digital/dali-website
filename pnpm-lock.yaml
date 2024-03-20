@@ -9,26 +9,26 @@ dependencies:
     specifier: 1.32.1-canary.14
     version: 1.32.1-canary.14
   '@alicorpdigital/dali-react-button':
-    specifier: 0.0.10-canary.3
-    version: 0.0.10-canary.3
+    specifier: 0.0.10-canary.4
+    version: 0.0.10-canary.4
   '@alicorpdigital/dali-react-divider':
     specifier: ^0.0.3
     version: 0.0.3
   '@alicorpdigital/dali-react-icon':
-    specifier: ^0.0.15
-    version: 0.0.15
+    specifier: 0.0.15-canary.0
+    version: 0.0.15-canary.0
   '@alicorpdigital/dali-react-input':
-    specifier: 0.0.1-canary.4
-    version: 0.0.1-canary.4
+    specifier: 0.0.1-canary.5
+    version: 0.0.1-canary.5
   '@alicorpdigital/dali-react-interactiveicon':
-    specifier: 0.0.2-canary.1
-    version: 0.0.2-canary.1
+    specifier: 0.0.2-canary.2
+    version: 0.0.2-canary.2
   '@alicorpdigital/dali-react-link':
-    specifier: 0.0.1-canary.0
-    version: 0.0.1-canary.0
+    specifier: 0.0.1-canary.1
+    version: 0.0.1-canary.1
   '@alicorpdigital/dali-react-select':
-    specifier: 0.0.1-canary.2
-    version: 0.0.1-canary.2
+    specifier: 0.0.1-canary.3
+    version: 0.0.1-canary.3
   '@alicorpdigital/dali-react-sidebar':
     specifier: 0.0.1-canary.8
     version: 0.0.1-canary.8
@@ -79,32 +79,32 @@ packages:
     resolution: {integrity: sha512-gVHPNdp1Ss3shMCwY0o/jV4fKMvIVHp/BUwh9mYnybRW70brgSQpAPFmAD9PigxvPVAfraZwssVY4lPsWUaafg==}
     dev: false
 
-  /@alicorpdigital/dali-react-button@0.0.10-canary.3:
-    resolution: {integrity: sha512-ZDIhf2Jh4EJ/pyYXFpC1I5IaUvIdtay/KpG2zkOzYQt4eEWlhod1wswUQ4kMJlD4anYHxrkd71STOcCWPaN4aQ==}
+  /@alicorpdigital/dali-react-button@0.0.10-canary.4:
+    resolution: {integrity: sha512-1wOTZDldFlaEm24CdVY0QIQbx9u/FAMtBKXzaBFz/W2z27XrVvS6didwYhCz+sL2YA0Snl8MQr9yzBlg2iP1qw==}
     dev: false
 
   /@alicorpdigital/dali-react-divider@0.0.3:
     resolution: {integrity: sha512-F0Bc0FLOMiNVKgtaZvw2yFXDvWJ6Nr2o2QEjRs4zphp428WbLEVFfsJeppCSbB7dlhzcLmU46w1Wa4qGNfO9sw==}
     dev: false
 
-  /@alicorpdigital/dali-react-icon@0.0.15:
-    resolution: {integrity: sha512-mYLkUcsPxxpyZil7flB9LgvXRVMpr2+FgEhGIT8m6la22LcWd3ScmCtuKJY+BV5dTo5n6EO6AQr5+FnQxspkwA==}
+  /@alicorpdigital/dali-react-icon@0.0.15-canary.0:
+    resolution: {integrity: sha512-oddietg9aPiAEDFqhh+AxPJ5RFuqsqMWkyW9Il7v7fmBXG+HdjzKh35rg+/fInoZg3ueoS7eycMyYhtaiDvASg==}
     dev: false
 
-  /@alicorpdigital/dali-react-input@0.0.1-canary.4:
-    resolution: {integrity: sha512-BiMkketgItS1wc9wkiUOWe4rbqqlRG7VfTodptkwmbXOHfsPabACpVZ3HglkbO9QIMqXVIlqPg/FNREMJ7WMlw==}
+  /@alicorpdigital/dali-react-input@0.0.1-canary.5:
+    resolution: {integrity: sha512-Ii8NVv6CORDflKokihpUCsPEWCtZjE6lLqufRVXJtIz3zO2IYyM6WgVmEM6V/iOOaHGjm0nkb/CUN6BXCzvkuw==}
     dev: false
 
-  /@alicorpdigital/dali-react-interactiveicon@0.0.2-canary.1:
-    resolution: {integrity: sha512-2F+tphsMvoY17FdbxY+wS4JKGQzfOhMRplT/nxotewrgscSErn9wDbcM96xaHf0l1MqhtKabFMLtRbo/XaROmg==}
+  /@alicorpdigital/dali-react-interactiveicon@0.0.2-canary.2:
+    resolution: {integrity: sha512-Aff2YyChohQaWaJ71DS+0aZ3EGjBe1GVhMHI0KQe5aojPPCXW8gLLSn5+QTnG5RZC8RwP2Mj5Grm4fMyhvR9ng==}
     dev: false
 
-  /@alicorpdigital/dali-react-link@0.0.1-canary.0:
-    resolution: {integrity: sha512-pDNqiCPezQiL6bPgjRwZRSuJsrq1z4SBmQyWMyRoJmREl7ASfJyf9679z9MtOLupCeiGdWL31MTryS48Z2ToSw==}
+  /@alicorpdigital/dali-react-link@0.0.1-canary.1:
+    resolution: {integrity: sha512-dHq96OvvkrEQZYwguAak7wKRw5F2BbS/0rcySmyETms3MD41uhlmkAwC/e9k+hKU+HTE77rybR3HHj7YbV3UHw==}
     dev: false
 
-  /@alicorpdigital/dali-react-select@0.0.1-canary.2:
-    resolution: {integrity: sha512-lKHWV52lCjov0x5W6nw9iR7NUmBArEmajNnCh81tuMke0I0HznHIRiuGJOCFqZkSALgp1OEdU+zXJTYdXosjfQ==}
+  /@alicorpdigital/dali-react-select@0.0.1-canary.3:
+    resolution: {integrity: sha512-9qDpka1fA9KUR3fxFWdBPNaIUQ9deeWUGiD2xZ4cvEfi3Pr4fc8Zef/yY/kR9T/fH0tJOf+vQ+bzacuZmNEu8g==}
     dev: false
 
   /@alicorpdigital/dali-react-sidebar@0.0.1-canary.8:
